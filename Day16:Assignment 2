@@ -12,18 +12,18 @@ int main() {
     for (i = 1; i <= n; i++)
 	 {
         if (i % k == 0) 
-		{
+	{
             printf("%d\n", i);
             
-            if (i % 2 == 0)
-			        {
+            if (i % 2 ==0)  
+	    {
                 evenSum += i;
                } 
                else
-			        {
+	    {
                 oddSum += i;
-                }
-       }
+             }
+        }
     }
     
     printf("Even sum: %d\n", evenSum);
