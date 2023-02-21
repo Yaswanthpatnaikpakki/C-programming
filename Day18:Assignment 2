@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+	int n,rem,sum=0,check;
+	printf("Enter any number");
+	scanf("%d",&n);
+	check=n;
+	while(n!=0)
+	{
+		
+		rem=n%10;
+		n=n/10;
+		sum=sum+(rem*rem*rem);
+	
+	}
+	if(check==sum)
+	{
+		printf("Armstrong number");
+		
+	}
+	else
+	{
+		printf("Not a Armstrong number");
+	}
+}
